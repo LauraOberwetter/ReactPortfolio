@@ -1,5 +1,11 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends React.Component {
 
@@ -12,14 +18,34 @@ class App extends React.Component {
           {title: 'Home', path: '/'},
           {title: 'About', path: '/about'},
           {title: 'Contact', path: '/contact'},
-        ]
+        ],
+        //top level information for each specific page
+        home: { // home object
+          title: 'Laura Oberwetter',
+          subTitle: 'Portfolio',
+          text: 'whatever blah blah'
+        },
+        about: { // about object
+          title: 'About Laura',
+        },
+        contact: { // contact object
+          title: 'HMU',
+        }
     }
   }
   render () {
     return (
-      <div>Hello</div>
+      <Router>
+        <Link></Link>
+        <Switch>
+          <Route></Route>
+        </Switch>
+        <div>Hello</div>
+      </Router>
       );
   }
+  
 }
+
 
 export default App;
