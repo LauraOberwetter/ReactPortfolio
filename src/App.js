@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  
+  constructor(props) {  //constructor gets props
+    super(props); //super takes in props
+    this.state = { //establish state for top level website items
+        title: 'Laura Oberwetter',
+        headerLinks: [ //array of objects with navbar titles/links
+          {title: 'Home', path: '/'},
+          {title: 'About', path: '/about'},
+          {title: 'Contact', path: '/contact'},
+        ]
+    }
+  }
+  render () {
+    return (
+      <div>Hello</div>
+      );
+  }
 }
 
 export default App;
