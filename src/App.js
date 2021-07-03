@@ -38,15 +38,34 @@ class App extends React.Component {
     return (
       <Router>
         <Container flud={true}>
-
+          <div class="jumbotron">
+            <h1 class="name text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
+              Laura
+            </h1>
+            <h1 class="name text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
+              Oberwetter
+            </h1>
+            <div class="container navContainer">
+              <nav class="nav justify-content-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
+                <a class="nav-item nav-link" href="#About">
+                  About
+                </a>
+                <a class="nav-item nav-link" href="#work">
+                  Work
+                </a>
+                <a class="nav-item nav-link" href="#contact">
+                  Contact
+                </a>
+              </nav>
+            </div>
+          </div>
         </Container>
         <Link></Link>
         <Switch>
           <Route></Route>
         </Switch>
-        <div>Hello</div>
       </Router>
-      );
+    );
   }
   
 }
