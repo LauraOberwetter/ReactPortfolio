@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
 
 class App extends React.Component {
 
@@ -36,6 +37,9 @@ class App extends React.Component {
   render () {
     return (
       <Router>
+        <Container flud={true}>
+
+        </Container>
         <Link></Link>
         <Switch>
           <Route></Route>
