@@ -38,27 +38,26 @@ class App extends React.Component {
     return (
       <Router>
         <Container flud={true}>
-          <div class="jumbotron">
-            <h1 class="name text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
-              Laura
-            </h1>
-            <h1 class="name text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
-              Oberwetter
-            </h1>
-            <div class="container navContainer">
-              <nav class="nav justify-content-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo">
-                <a class="nav-item nav-link" href="#About">
-                  About
-                </a>
-                <a class="nav-item nav-link" href="#work">
-                  Work
-                </a>
-                <a class="nav-item nav-link" href="#contact">
-                  Contact
-                </a>
-              </nav>
+          {/* main nav section */}
+          <nav class="container h-100">
+            <div class="row menu">
+              <div class="col-sm d-flex align-items-center justify-content-center red">
+                <button class="animation scale-in pinkBtn">
+                  <a href="#About" class="blackLink">About</a>
+                </button>
+              </div>
+              <div class="col-sm d-flex align-items-center justify-content-center pink">
+                <button class="animation scale-in redBtn">
+                  <a href="#Work" class="whiteLink">Work</a>
+                </button>
+              </div>
+              <div class="col-sm d-flex align-items-center justify-content-center  red">
+                <button class="animation scale-in pinkBtn">
+                  <a href="#Contact" class="blackLink">Contact</a>
+                </button>
+              </div>
             </div>
-          </div>
+          </nav>
         </Container>
         <Link></Link>
         <Switch>

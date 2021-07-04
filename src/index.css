@@ -11,3 +11,176 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --blue: #B7D3FF;
+  --pink:#FFCCCB;
+  --red: #FF0703;
+}
+
+/* light blue header */
+
+.headBanner {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+/* main nav */
+.row {
+  justify-content: space-around;
+}
+/* ^this isnt working */
+
+.col-sm {
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.red {
+  background-color: var(--red)!important;
+  color: white;
+}
+
+.pink {
+  background-color: var(--pink)!important;
+}
+
+.menu, .card {
+  height: 85vh;
+}
+
+.workRow {
+  height: 40vh;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.blackLink {
+  color: black;
+}
+
+.pinkBtn {
+  display: hidden;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: none;
+  background: var(--pink);
+  transition: transform .1s ease 1s; /*delay 1s*/
+  font-size: 20px;
+  line-height: 1;
+}
+
+.redBtn {
+  display: hidden;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  border: none;
+  background: var(--red);
+  transition: transform .1s ease 1s; /*delay 1s*/
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.redBtn:hover, .pinkBtn:hover {
+  transform: scale(3.25);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+#About {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card-group {
+  margin-left: 10%;      
+  margin-right: 10%;
+  width: auto;
+}
+
+.fas, .fab {
+  font-size: 3em;
+  padding: 10%;
+  color: black;
+  
+}
+.redCard, .pinkCard {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0s ease 1s; /*delay 1s*/
+}
+
+.redCard:hover {
+  background-color: var(--pink)!important;
+  color: black;
+  transition-delay: 0s;
+  visibility: visible;
+}
+.pinkCard:hover {
+  background-color: var(--red)!important;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+h3 {
+  font-family: 'Righteous', cursive;
+  padding-bottom: 15%;
+}
+
+.pinkWorkBtn {
+  width: 100%;
+  height: 95%;
+  border-radius: 100%;
+  border: none;
+  background: var(--pink);
+  color: black !important;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.redWorkBtn {
+  width: 100%;
+  height: 95%;
+  border-radius: 100%;
+  border: none;
+  background: var(--red);
+  color: white !important;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.redWorkBtn:hover, .pinkWorkBtn:hover {
+  /* background-image: url("assets/giphy.gif"); */
+  background-size: 100%;
+  color: white;
+}
+
+.work {
+  padding: 4%;
+}
