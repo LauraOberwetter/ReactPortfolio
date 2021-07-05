@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 
+import Footer from './Components/Footer';
+
 class App extends React.Component {
 
   
@@ -44,22 +46,31 @@ class App extends React.Component {
               <div class="col-sm d-flex align-items-center justify-content-center red">
                 <button class="animation scale-in pinkBtn">
                   <a href="#About" class="blackLink">About</a>
+                  {/* or */}
+                  {/* <Link className="blackLink" to="#About"></Link> */}
                 </button>
               </div>
               <div class="col-sm d-flex align-items-center justify-content-center pink">
                 <button class="animation scale-in redBtn">
                   <a href="#Work" class="whiteLink">Work</a>
+                  {/* or */}
+                  {/* <Link className="whiteLink" to="#Work"></Link> */}
                 </button>
               </div>
               <div class="col-sm d-flex align-items-center justify-content-center  red">
                 <button class="animation scale-in pinkBtn">
-                  <a href="#Contact" class="blackLink">Contact</a>
+                  {/* <a href="#Contact" class="blackLink">Contact</a> */}
+                  {/* or */}
+                  <Link className="blackLink" to="#Contact">Contact</Link>
                 </button>
               </div>
             </div>
           </nav>
+
+          {/* footer section */}
+          <Footer />
+
         </Container>
-        <Link></Link>
         <Switch>
           <Route></Route>
         </Switch>
