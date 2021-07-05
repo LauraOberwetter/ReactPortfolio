@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Fridge Foodie",
+      "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+      "link": "https://agrassl.github.io/FridgeFoodieRecipes/index.html",
+      "colclass": "d-flex align-items-center justify-content-center red",
+      "btnclass": "pinkWorkBtn",
+      "linkclass": "blackLink"
+    },
+    {
+        "id": 2,
+        "name": "Study Room",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "link": "https://github.com/Zane-Gilfillan/Study-Room",
+        "colclass": "d-flex align-items-center justify-content-center pink",
+        "btnclass": "redWorkBtn",
+        "linkclass": "whiteLink"
+    },
+    {
+        "id": 3,
+        "name": "Weather Dashboard",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "link": "https://lauraoberwetter.github.io/weatherDashboard/",
+        "colclass": "d-flex align-items-center justify-content-center red",
+        "btnclass": "pinkWorkBtn",
+        "linkclass": "blackLink"
+    },
+    {
+        "id": 4,
+        "name": "Day Planner",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "link": "https://github.com/Zane-Gilfillan/Study-Room",
+        "colclass": "d-flex align-items-center justify-content-center pink",
+        "btnclass": "redWorkBtn",
+        "linkclass": "whiteLink"
+    },
+    {
+        "id": 5,
+        "name": "Coding Quiz",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "link": "https://lauraoberwetter.github.io/weatherDashboard/",
+        "colclass": "d-flex align-items-center justify-content-center red",
+        "btnclass": "pinkWorkBtn",
+        "linkclass": "blackLink"
+    },
+    {
+        "id": 6,
+        "name": "Password Generator",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "link": "https://github.com/Zane-Gilfillan/Study-Room",
+        "colclass": "d-flex align-items-center justify-content-center pink",
+        "btnclass": "redWorkBtn",
+        "linkclass": "whiteLink"
+    }
+  ]
+  

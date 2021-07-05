@@ -5,6 +5,8 @@ import Container from "react-bootstrap/Container";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import WorkCard from "./Components/WorkCard";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -73,6 +75,8 @@ class App extends React.Component {
               </div>
             </div>
           </nav>
+
+          <WorkCard />
 
           <Footer />
         </Container>
