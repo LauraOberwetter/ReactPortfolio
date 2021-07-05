@@ -18,8 +18,7 @@ code {
   --red: #FF0703;
 }
 
-/* light blue header */
-
+/* header */
 .headBanner {
   color: white;
   font-family: 'Righteous', cursive;
@@ -35,8 +34,8 @@ body {
 .row {
   justify-content: space-around;
 }
-/* ^this isnt working */
 
+/* work */
 .col-sm {
   border-style: solid;
   border-color: white;
@@ -44,24 +43,24 @@ body {
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
 }
-
+/* nav/work */
 .red {
   background-color: var(--red)!important;
   color: white;
 }
-
+/* nav/work */
 .pink {
   background-color: var(--pink)!important;
 }
-
+/* nav */
 .menu, .card {
   height: 85vh;
 }
 
+/* work 
 .workRow {
   height: 40vh;
-}
-
+}*/
 
 a:link {
   text-decoration: none;
@@ -78,7 +77,7 @@ a:hover {
 .blackLink {
   color: black;
 }
-
+/* nav */
 .pinkBtn {
   display: hidden;
   width: 30%;
@@ -90,7 +89,7 @@ a:hover {
   font-size: 20px;
   line-height: 1;
 }
-
+/* nav */
 .redBtn {
   display: hidden;
   width: 30%;
@@ -103,7 +102,7 @@ a:hover {
   font-size: 20px;
   line-height: 1;
 }
-
+/* nav */
 .redBtn:hover, .pinkBtn:hover {
   transform: scale(3.25);
   transition-delay: 0s;
@@ -116,30 +115,35 @@ a:hover {
   padding-bottom: 5%;
 }
 
+/* about/contact */
 .card-group {
   margin-left: 10%;      
   margin-right: 10%;
   width: auto;
 }
 
-.fas, .fab {
+/* icons */
+.fas, .fab { 
   font-size: 3em;
   padding: 10%;
   color: black;
   
 }
+
+/* about/contact */
 .redCard, .pinkCard {
   color: black;
   font-family: 'Montserrat', sans-serif;
   transition: all 0s ease 1s; /*delay 1s*/
 }
-
+/* about/contact */
 .redCard:hover {
   background-color: var(--pink)!important;
   color: black;
   transition-delay: 0s;
   visibility: visible;
 }
+/* about/contact */
 .pinkCard:hover {
   background-color: var(--red)!important;
   color: white;
@@ -147,12 +151,12 @@ a:hover {
   transition-delay: 0s;
   visibility: visible;
 }
-
+/* all */
 h3 {
   font-family: 'Righteous', cursive;
   padding-bottom: 15%;
 }
-
+/* added to WorkCard style sheet  
 .pinkWorkBtn {
   width: 100%;
   height: 95%;
@@ -176,11 +180,11 @@ h3 {
 }
 
 .redWorkBtn:hover, .pinkWorkBtn:hover {
-  /* background-image: url("assets/giphy.gif"); */
+  /* background-image: url("assets/giphy.gif"); 
   background-size: 100%;
   color: white;
 }
 
 .work {
   padding: 4%;
-}
+} */
