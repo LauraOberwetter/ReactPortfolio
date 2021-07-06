@@ -41,31 +41,31 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container flud={true}>
+        <Container fluid={true}>
           <Header />
           {/* main nav section */}
-          <nav class="container h-100">
-            <div class="row menu">
-              <div class="col-sm d-flex align-items-center justify-content-center red">
-                <button class="animation scale-in pinkBtn">
-                  <a href="#About" class="blackLink">
+          <nav className="container h-100">
+            <div className="row menu">
+              <div className="col-sm d-flex align-items-center justify-content-center red">
+                <button className="animation scale-in pinkBtn">
+                  <a href="#About" className="blackLink">
                     About
                   </a>
                   {/* or */}
                   {/* <Link className="blackLink" to="#About"></Link> */}
                 </button>
               </div>
-              <div class="col-sm d-flex align-items-center justify-content-center pink">
-                <button class="animation scale-in redBtn">
-                  <a href="#Work" class="whiteLink">
+              <div className="col-sm d-flex align-items-center justify-content-center pink">
+                <button className="animation scale-in redBtn">
+                  <a href="#Work" className="whiteLink">
                     Work
                   </a>
                   {/* or */}
                   {/* <Link className="whiteLink" to="#Work"></Link> */}
                 </button>
               </div>
-              <div class="col-sm d-flex align-items-center justify-content-center  red">
-                <button class="animation scale-in pinkBtn">
+              <div className="col-sm d-flex align-items-center justify-content-center  red">
+                <button className="animation scale-in pinkBtn">
                   {/* <a href="#Contact" class="blackLink">Contact</a> */}
                   {/* or */}
                   <Link className="blackLink" to="#Contact">

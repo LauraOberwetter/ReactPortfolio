@@ -10,7 +10,7 @@ function WorkCard(props) {
             <Container fluid={true}>
                 <Row className="workRow">
                     <Col className={props.colclass}> 
-                        <button className={props.btnClass}><a href={props.link} className={props.linkclass}>{props.name}</a></button>
+                        <button className={props.btnclass}><a href={props.link} className={props.linkclass}>{props.name}</a></button>
                     </Col>
                 </Row>
             </Container>
