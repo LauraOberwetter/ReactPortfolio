@@ -9,37 +9,47 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import WorkCard from "./Components/WorkCard";
 import work from "./work.json";
+//this.state.work
 
 class App extends React.Component {
-  constructor(props) {
-    //constructor gets props
-    super(props); //super takes in props
-    this.state = {
-      //establish state for top level website items
-      title: "Laura Oberwetter",
-      headerLinks: [
-        //array of objects with navbar titles/links
-        { title: "Home", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Contact", path: "/contact" },
-      ],
-      //top level information for each specific page
-      home: {
-        // home object
-        title: "Laura Oberwetter",
-        subTitle: "Portfolio",
-        text: "whatever blah blah",
-      },
-      about: {
-        // about object
-        title: "About Laura",
-      },
-      contact: {
-        // contact object
-        title: "HMU",
-      },
-    };
-  }
+  state = {
+    work: 0
+  };
+
+  // handleIncrement increments this.state.count by 1
+  handleIncrement = () => {
+    this.setState({ work: this.state.work + 1 });
+  };
+
+  // constructor(props) {
+  //   //constructor gets props
+  //   super(props); //super takes in props
+  //   this.state = {
+  //     //establish state for top level website items
+  //     title: "Laura Oberwetter",
+  //     headerLinks: [
+  //       //array of objects with navbar titles/links
+  //       { title: "Home", path: "/" },
+  //       { title: "About", path: "/about" },
+  //       { title: "Contact", path: "/contact" },
+  //     ],
+  //     //top level information for each specific page
+  //     home: {
+  //       // home object
+  //       title: "Laura Oberwetter",
+  //       subTitle: "Portfolio",
+  //       text: "whatever blah blah",
+  //     },
+  //     about: {
+  //       // about object
+  //       title: "About Laura",
+  //     },
+  //     contact: {
+  //       // contact object
+  //       title: "HMU",
+  //     },
+  //   };
+  // }
   render() {
     return (
       <Router>
@@ -79,7 +89,7 @@ class App extends React.Component {
           </nav>
 
           <Wrapper>
-            {this.state.work.map((work) => (
+            {work.map((work) => (
               <WorkCard
                 id={work.id}
                 key={work.id}
