@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./Components/Wrapper/index.js";
 
 
 import Footer from "./Components/Footer";
