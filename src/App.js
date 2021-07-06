@@ -2,11 +2,13 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+import Wrapper from "./components/Wrapper";
+
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import WorkCard from "./Components/WorkCard";
-
+import work from "./work.json";
 
 class App extends React.Component {
   constructor(props) {
@@ -76,7 +78,20 @@ class App extends React.Component {
             </div>
           </nav>
 
-          <WorkCard />
+          <Wrapper>
+            {this.state.work.map((work) => (
+              <WorkCard
+                id={work.id}
+                key={work.id}
+                name={work.name}
+                image={work.image}
+                link={work.link}
+                colclass={work.colclass}
+                btnclass={work.btnclass}
+                linkclass={work.linkclass}
+              />
+            ))}
+          </Wrapper>
 
           <Footer />
         </Container>
