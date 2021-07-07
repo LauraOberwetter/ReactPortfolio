@@ -2,13 +2,13 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Wrapper from "./Components/Wrapper/index.js";
+//import Wrapper from "./Components/Wrapper/index.js";
 
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import WorkCard from "./Components/WorkCard";
-import work from "./work.json";
+import WorkPage from "./Components/Work";
+//import work from "./work.json";
 //this.state.work
 
 class App extends React.Component {
@@ -88,7 +88,9 @@ class App extends React.Component {
             </div>
           </nav>
 
-          <Wrapper>
+          <Route path="/" exact render={()=> <WorkPage title={this.state.workpage.title}/>}/>
+
+          {/* <Wrapper>
             {work.map((work) => (
               <WorkCard
                 id={work.id}
@@ -101,7 +103,7 @@ class App extends React.Component {
                 linkclass={work.linkclass}
               />
             ))}
-          </Wrapper>
+          </Wrapper> */}
 
           <Footer />
         </Container>
