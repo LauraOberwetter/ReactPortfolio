@@ -11,45 +11,39 @@ import WorkPage from "./Components/Work";
 //import work from "./work.json";
 //this.state.work
 
-class App extends React.Component {
-  state = {
-    work: 0
-  };
+// class App extends React.Component {
+//   state = {
+//     work: 0
+//   };
 
-  // handleIncrement increments this.state.count by 1
-  handleIncrement = () => {
-    this.setState({ work: this.state.work + 1 });
-  };
+//   // handleIncrement increments this.state.count by 1
+//   handleIncrement = () => {
+//     this.setState({ work: this.state.work + 1 });
+//   };
+  
+  class App extends React.Component {
+    constructor(props) {  //constructor gets props
+      super(props); //super takes in props
+      this.state = { //establish state for top level website items
+          title: 'Laura Oberwetter',
+          headerLinks: [ //array of objects with navbar titles/links
+            {title: 'Home', path: '/'},
+            {title: 'About', path: '/about'},
+            {title: 'Contact', path: '/contact'},
+          ],
+          //top level information for each specific page
+          aboutpage: { // home object
+            title: 'Laura Oberwetter'
+          },
+          workpage: { // about object
+            title: 'workExamples'
+          },
+          contactpage: { // contact object
+            title: 'HMU'
+          }
+      }
+    }
 
-  // constructor(props) {
-  //   //constructor gets props
-  //   super(props); //super takes in props
-  //   this.state = {
-  //     //establish state for top level website items
-  //     title: "Laura Oberwetter",
-  //     headerLinks: [
-  //       //array of objects with navbar titles/links
-  //       { title: "Home", path: "/" },
-  //       { title: "About", path: "/about" },
-  //       { title: "Contact", path: "/contact" },
-  //     ],
-  //     //top level information for each specific page
-  //     home: {
-  //       // home object
-  //       title: "Laura Oberwetter",
-  //       subTitle: "Portfolio",
-  //       text: "whatever blah blah",
-  //     },
-  //     about: {
-  //       // about object
-  //       title: "About Laura",
-  //     },
-  //     contact: {
-  //       // contact object
-  //       title: "HMU",
-  //     },
-  //   };
-  // }
   render() {
     return (
       <Router>
@@ -88,7 +82,9 @@ class App extends React.Component {
             </div>
           </nav>
 
+          <Route path="/" exact render={()=> <AboutPage title={this.state.aboutpage.title}/>}/>
           <Route path="/" exact render={()=> <WorkPage title={this.state.workpage.title}/>}/>
+          <Route path="/" exact render={()=> <ContactPage title={this.state.contactpage.title}/>}/>
 
           {/* <Wrapper>
             {work.map((work) => (
