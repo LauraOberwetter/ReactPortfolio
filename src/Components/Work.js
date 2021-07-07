@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Header from "./Header";
 import Footer from "./Footer";
 import WorkCard from "./WorkCard";
-//import work from "../../work.json";
+import work from "../work.json";
 //this.state.work
 
 //  class App extends React.Component {
