@@ -8,6 +8,9 @@ import Container from "react-bootstrap/Container";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import WorkPage from "./Components/Work";
+import ContactPage from "./Components/ContactPage";
+import AboutPage from "./Components/Work";
+
 //import work from "./work.json";
 //this.state.work
 
@@ -29,13 +32,14 @@ import WorkPage from "./Components/Work";
           headerLinks: [ //array of objects with navbar titles/links
             {title: 'Home', path: '/'},
             {title: 'About', path: '/about'},
-            {title: 'Contact', path: '/contact'},
+            {title: 'Work', path: '/work'},
+            {title: 'Contact', path: '/contact'}
           ],
           //top level information for each specific page
-          aboutpage: { // home object
-            title: 'Laura Oberwetter'
+          aboutpage: { // about object
+            title: 'aboutMe'
           },
-          workpage: { // about object
+          workpage: { // work object
             title: 'workExamples'
           },
           contactpage: { // contact object
@@ -54,37 +58,25 @@ import WorkPage from "./Components/Work";
             <div className="row menu">
               <div className="col-sm d-flex align-items-center justify-content-center red">
                 <button className="animation scale-in pinkBtn">
-                  <a href="#About" className="blackLink">
-                    About
-                  </a>
-                  {/* or */}
-                  {/* <Link className="blackLink" to="#About"></Link> */}
+                  <Link className="blackLink" to="/about">About</Link>
                 </button>
               </div>
               <div className="col-sm d-flex align-items-center justify-content-center pink">
                 <button className="animation scale-in redBtn">
-                  <a href="#Work" className="whiteLink">
-                    Work
-                  </a>
-                  {/* or */}
-                  {/* <Link className="whiteLink" to="#Work"></Link> */}
+                  <Link className="whiteLink" to="/work">Work</Link>
                 </button>
               </div>
               <div className="col-sm d-flex align-items-center justify-content-center  red">
                 <button className="animation scale-in pinkBtn">
-                  {/* <a href="#Contact" class="blackLink">Contact</a> */}
-                  {/* or */}
-                  <Link className="blackLink" to="#Contact">
-                    Contact
-                  </Link>
+                  <Link className="blackLink" to="/contact">Contact</Link>
                 </button>
               </div>
             </div>
           </nav>
 
-          <Route path="/" exact render={()=> <AboutPage title={this.state.aboutpage.title}/>}/>
-          <Route path="/" exact render={()=> <WorkPage title={this.state.workpage.title}/>}/>
-          <Route path="/" exact render={()=> <ContactPage title={this.state.contactpage.title}/>}/>
+          <Route path="/about" render={()=> <AboutPage title={this.state.aboutpage.title}/>}/>
+          <Route path="/work" render={()=> <WorkPage title={this.state.workpage.title}/>}/>
+          <Route path="/contact" render={()=> <ContactPage title={this.state.contactpage.title}/>}/>
 
           {/* <Wrapper>
             {work.map((work) => (
