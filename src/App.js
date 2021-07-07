@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-//import Wrapper from "./Components/Wrapper/index.js";
-
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
@@ -11,18 +9,6 @@ import WorkPage from "./Components/Work";
 import ContactPage from "./Components/ContactPage";
 import AboutPage from "./Components/Work";
 
-//import work from "./work.json";
-//this.state.work
-
-// class App extends React.Component {
-//   state = {
-//     work: 0
-//   };
-
-//   // handleIncrement increments this.state.count by 1
-//   handleIncrement = () => {
-//     this.setState({ work: this.state.work + 1 });
-//   };
   
   class App extends React.Component {
     constructor(props) {  //constructor gets props
@@ -78,20 +64,6 @@ import AboutPage from "./Components/Work";
           <Route path="/work" render={()=> <WorkPage title={this.state.workpage.title}/>}/>
           <Route path="/contact" render={()=> <ContactPage title={this.state.contactpage.title}/>}/>
 
-          {/* <Wrapper>
-            {work.map((work) => (
-              <WorkCard
-                id={work.id}
-                key={work.id}
-                name={work.name}
-                image={work.image}
-                link={work.link}
-                colclass={work.colclass}
-                btnclass={work.btnclass}
-                linkclass={work.linkclass}
-              />
-            ))}
-          </Wrapper> */}
 
           <Footer />
         </Container>
