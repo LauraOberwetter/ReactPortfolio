@@ -10,7 +10,7 @@ function Header() {
         <header className="mb-5"> 
             <Container fluid={true}>
                 <Row className='headBanner border-bottom text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo'>
-                    <Link to="/">Laura Oberwetter</Link>
+                    <Link className ='headerLink' to="/">Laura Oberwetter</Link>
                 </Row>
             </Container>
 
