@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
         <header className="mb-5"> 
             <Container fluid={true}>
                 <Row className='headBanner border-bottom text-center vhs-flicker vhs-delay-3 vhs-duration-6 js-demo'>
-                    Laura Oberwetter
+                    <Link to="/">Laura Oberwetter</Link>
                 </Row>
             </Container>
 

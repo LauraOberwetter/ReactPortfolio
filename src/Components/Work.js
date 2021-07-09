@@ -2,8 +2,6 @@ import React from "react";
 import Wrapper from "./Wrapper/index.js";
 import Container from "react-bootstrap/Container";
 
-import Header from "./Header";
-import Footer from "./Footer";
 import WorkCard from "./WorkCard";
 import work from "../work.json";
 //this.state.work
@@ -21,7 +19,6 @@ import work from "../work.json";
 function WorkPage(props) {
   return (
     <Container fluid={true}>
-      <Header />
         <Wrapper>
             {work.map((work) => (
             <WorkCard
@@ -36,7 +33,6 @@ function WorkPage(props) {
             />
             ))}
         </Wrapper>
-      <Footer />
     </Container>
   );
 }
