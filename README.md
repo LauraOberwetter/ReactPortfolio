@@ -37,4 +37,4 @@ This is an updated version of a portfolio prototype that I will continue to modi
    
 
 ## Link
-https://lauraoberwetter.github.io/ReactPortfolio/
+https://lauraoberwetter.github.io/
