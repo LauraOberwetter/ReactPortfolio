@@ -7,7 +7,10 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import WorkPage from "./Components/Work";
 import ContactPage from "./Components/ContactPage";
-import AboutPage from "./Components/Work";
+import AboutPage from "./Components/AboutPage";
+import HomePage from "./Components/HomePage";
+
+
 
   
   class App extends React.Component {
@@ -22,6 +25,9 @@ import AboutPage from "./Components/Work";
             {title: 'Contact', path: '/contact'}
           ],
           //top level information for each specific page
+          homepage: { // home
+            title: 'home'
+          },
           aboutpage: { // about object
             title: 'aboutMe'
           },
@@ -39,7 +45,7 @@ import AboutPage from "./Components/Work";
       <Router>
         <Container fluid={true}>
           <Header />
-          {/* main nav section */}
+          {/* main nav/home section */}
           <nav className="container h-100">
             <div className="row menu">
               <div className="col-sm d-flex align-items-center justify-content-center red">
@@ -60,6 +66,7 @@ import AboutPage from "./Components/Work";
             </div>
           </nav>
 
+          <Route path="/" exact render={()=> <HomePage title={this.state.homepage.title}/>}/>
           <Route path="/about" render={()=> <AboutPage title={this.state.aboutpage.title}/>}/>
           <Route path="/work" render={()=> <WorkPage title={this.state.workpage.title}/>}/>
           <Route path="/contact" render={()=> <ContactPage title={this.state.contactpage.title}/>}/>
